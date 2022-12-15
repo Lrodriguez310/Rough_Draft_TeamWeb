@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallards</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    
+   
+
+</head>
+<body>
+    <header id="header">
+        <img src="logo.webp">
+    </header>
+    <section>
+        
+        <h2 id="text"><span>RiverSide</span><br>Mallards</h2>
+        <img src="./bird1.png" id="bird1">
+        <img src="./bird2.png" id="bird2">
+        <img src="./forest.png" id="forest">
+        <a href="home.html" id="btn">Home</a>
+
+        <img src="./rocks.png" id="rocks">
+        <img src="./water.png" id="water">
+    </section>
+
+    <div class="sec">
+        <h2>Mallards Team Go!</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Quas tenetur facere harum vel quos error ducimus neque est, <br>
+            a consequuntur, molestiae minus sapiente suscipit nisi <br>
+            repudiandae dolor corporis. Eum tenetur praesentium velit <br>
+            sequi veniam corporis deserunt minus repellat porro adipisci <br>
+            itaque, expedita, animi voluptates error, ab explicabo! Ab, <br>
+            tenetur earum!</p>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                
+            </div>
+    
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>519-455-5555</p>
+                    <p>Email@domain.com</p>
+                </div>
+    
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+    
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+    
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+    
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+    
+                
+    
+            </div>
+    
+           
+    
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; U Ready? by Luis Rodriguez</small>
+        </div>
+    </footer>
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 20 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -3 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    
+    <div id="bubble-wrapper">
+        <div class="bubble"><img src="./img/logo.webp"></div>
+    </div>
+</body>
+</html>
